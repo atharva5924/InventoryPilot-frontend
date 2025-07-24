@@ -2,6 +2,16 @@
 
 A full-stack MERN application to manage product inventory with authentication, image uploads, quantity tracking, and analytics.
 
+**Tagline:** *"Simplify. Track. Grow."*
+
+---
+
+### 🚀 Live Demo
+
+🔗 [Deployed Live on Vercel](https://pin-point-map-frontend.vercel.app/)<br>
+📂 [Backend GitHub Repository](https://github.com/atharva5924/PinPointMap-backend)
+
+
 ---
 
 ## 🚀 Features
