@@ -16,7 +16,7 @@ const Login = () => {
     setError("");
     try {
       const res = await axios.post(
-        "http://localhost:5000/users/login",
+        "https://inventorypilot-backend-ib2e.onrender.com/users/login",
         formData,
         {
           withCredentials: true,
