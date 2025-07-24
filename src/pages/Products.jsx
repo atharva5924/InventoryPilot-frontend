@@ -6,14 +6,13 @@ const Products = () => {
   const [products, setProducts] = useState([]);
   const [quantityUpdates, setQuantityUpdates] = useState({});
   const [loading, setLoading] = useState(true);
-  //   const token = localStorage.getItem("token");
   const navigate = useNavigate();
 
   const fetchProducts = async () => {
     setLoading(true);
     try {
       const res = await axios.get(
-        "http://localhost:5000/products?page=1&limit=10",
+        "https://inventorypilot-backend-ib2e.onrender.com/products?page=1&limit=10",
         {
           withCredentials: true,
         }
@@ -39,7 +38,7 @@ const Products = () => {
 
     try {
       await axios.put(
-        `http://localhost:5000/products/${id}/quantity`,
+        `https://inventorypilot-backend-ib2e.onrender.com/products/${id}/quantity`,
         { quantity: newQuantity },
         {
           withCredentials: true,
@@ -53,7 +52,7 @@ const Products = () => {
 
   const logout = async () => {
     await axios.post(
-      "http://localhost:5000/users/logout",
+      "https://inventorypilot-backend-ib2e.onrender.com/users/logout",
       {},
       {
         withCredentials: true,
@@ -64,7 +63,7 @@ const Products = () => {
 
   const handleDelete = async (productId) => {
     try {
-      await axios.delete(`http://localhost:5000/products/${productId}`, {
+      await axios.delete(`https://inventorypilot-backend-ib2e.onrender.com/products/${productId}`, {
         withCredentials: true,
       });
       setProducts((prev) => prev.filter((p) => p._id !== productId));
