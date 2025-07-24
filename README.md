@@ -14,15 +14,19 @@ A full-stack MERN application to manage product inventory with authentication, i
 
 ---
 
-## 🚀 Features
+### 🌟 Features
 
-- 🔐 User Authentication (Register/Login/Logout)
-- 📦 Product Management (Add, List, Update Quantity)
-- 📊 Basic Analytics (Top Products, Total Count)
-- 🌁 Image Upload via Cloudinary
-- 🧭 Swagger Docs at `/api-docs`
-- 🎨 Responsive React UI using Tailwind CSS + Vite
-- ⚙️ Role-based JWT Authentication with Cookies
+- 🔐 **JWT-based Auth**: Login and register with secure cookie-based JWT authentication  
+- 🧑‍💼 **User Dashboard**: Beautiful UI after login with access to all product-related operations  
+- 🛍️ **Add/Edit Products**: Easily add new products or update existing ones with quantity and category  
+- 📉 **Update Quantity**: Directly modify product stock values with intuitive UI  
+- 📊 **Interactive Charts**:  
+  - 📈 **Pie Chart**: Shows stock distribution across categories  
+  - 📊 **Bar Chart**: Visualizes stock levels by product name  
+- 🌈 **Modern UI**: Fully responsive layout with animated gradient background, glowing elements, and glassmorphic cards  
+- 💾 **Persistent Session**: Maintains login state via HTTP-only cookies  
+- ☁️ **Cloudinary Integration**: Product images are uploaded to and served from Cloudinary  
+- 🔄 **Real-time Feedback**: Smooth transitions, toast alerts, and form validations for a better UX  
 
 ---
 
