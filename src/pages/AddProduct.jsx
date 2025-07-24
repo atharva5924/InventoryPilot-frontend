@@ -43,9 +43,9 @@ const AddProduct = () => {
       form.append("description", formData.description);
       form.append("quantity", formData.quantity);
       form.append("price", formData.price);
-      form.append("image", formData.image); // 👈 the actual file
+      form.append("image", formData.image); 
 
-      await axios.post("http://localhost:5000/products", form, {
+      await axios.post("https://inventorypilot-backend-ib2e.onrender.com/products", form, {
         withCredentials: true,
         headers: {
           "Content-Type": "multipart/form-data",
