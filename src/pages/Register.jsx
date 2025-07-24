@@ -17,7 +17,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/users/register", formData, {
+      await axios.post("https://inventorypilot-backend-ib2e.onrender.com/users/register", formData, {
         withCredentials: true,
       });
       navigate("/"); // Go to login after successful registration
