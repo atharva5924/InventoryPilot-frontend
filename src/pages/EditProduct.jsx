@@ -13,10 +13,10 @@ const EditProduct = () => {
     type: "",
   });
   const [image, setImage] = useState(null);
-  // const [flag, setFlag] = useState(false);
+ 
 
   useEffect(() => {
-    // Reset form immediately
+    
     setForm({
       name: "",
       description: "",
@@ -28,7 +28,7 @@ const EditProduct = () => {
 
     const fetchProduct = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/products", {
+        const res = await axios.get("https://inventorypilot-backend-ib2e.onrender.com/products", {
           withCredentials: true,
         });
         const product = res.data.find((p) => p._id === productId);
@@ -60,7 +60,7 @@ const EditProduct = () => {
     if (image) formData.append("image", image);
 
     try {
-      await axios.put(`http://localhost:5000/products/${productId}`, formData, {
+      await axios.put(`https://inventorypilot-backend-ib2e.onrender.com/products/${productId}`, formData, {
         withCredentials: true,
         headers: { "Content-Type": "multipart/form-data" },
       });
