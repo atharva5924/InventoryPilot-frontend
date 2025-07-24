@@ -19,14 +19,14 @@ import { useNavigate } from "react-router-dom";
 
 const Analytics = () => {
   const [data, setData] = useState([]);
-  const [role, setRole] = useState(""); // Store user role
+  const [role, setRole] = useState(""); 
   const navigate = useNavigate();
   const COLORS = ["#3b82f6", "#6366f1", "#8b5cf6", "#ec4899", "#f97316"];
 
   const fetchAnalytics = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/analytics/top-product-types",
+        "https://inventorypilot-backend-ib2e.onrender.com/analytics/top-product-types",
         {
           withCredentials: true,
         }
@@ -39,11 +39,11 @@ const Analytics = () => {
 
   const fetchUserRole = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/users/me", {
+      const res = await axios.get("https://inventorypilot-backend-ib2e.onrender.com/users/me", {
         withCredentials: true,
       });
 
-      // console.log("User role:", res.data.data.role);
+    
       setRole(res.data.data.role);
       if (res.data.data.role !== "admin") {
         alert("You do not have permission to view this page.");
