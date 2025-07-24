@@ -122,7 +122,7 @@ const AddProduct = () => {
               name="image"
               accept="image/*"
               onChange={handleChange}
-              className="w-full text-gray-700 bg-white/70 backdrop-blur-sm rounded-xl border border-gray-300 px-4 py-2"
+              className="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-sm file:font-semibold file:bg-blue-100 file:text-blue-700 hover:file:bg-blue-200"
               required
             />
           </div>
