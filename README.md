@@ -8,7 +8,7 @@ A full-stack MERN application to manage product inventory with authentication, i
 
 ### 🚀 Live Demo
 
-🔗 [Deployed Live on Vercel](https://pin-point-map-frontend.vercel.app/)<br>
+🔗 [Deployed Live on Vercel](https://inventory-pilot-frontend.vercel.app/)<br>
 📂 [Backend GitHub Repository](https://github.com/atharva5924/InventoryPilot-backend)
 
 
