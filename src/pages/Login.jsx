@@ -44,6 +44,7 @@ const Login = () => {
             <input
               type="text"
               name="username"
+              placeholder="Enter username"
               onChange={handleChange}
               className="w-full px-4 py-2 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 bg-white/70 backdrop-blur-sm"
               required
@@ -56,6 +57,7 @@ const Login = () => {
             <input
               type={showPassword ? "text" : "password"}
               name="password"
+              placeholder="Enter password"
               onChange={handleChange}
               className="w-full px-4 py-2 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 bg-white/70 backdrop-blur-sm pr-16"
               required
