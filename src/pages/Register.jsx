@@ -57,6 +57,7 @@ const Register = () => {
             <input
               type={showPassword ? "text" : "password"}
               name="password"
+              placeholder="Enter password"
               onChange={handleChange}
               className="w-full px-4 py-2 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 bg-white/70 backdrop-blur-sm pr-16"
               required
@@ -94,7 +95,7 @@ const Register = () => {
         <p className="text-sm text-center mt-6 text-gray-700">
           Already have an account?{" "}
           <span
-            className="text-emerald-600 font-medium cursor-pointer hover:underline"
+            className="text-blue-600 font-medium cursor-pointer hover:underline"
             onClick={() => navigate("/")}
           >
             Login here
