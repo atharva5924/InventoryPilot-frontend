@@ -227,8 +227,6 @@ CSE Undergrad @ IIIT Nagpur
 
 Let me know if you want:
 - A Hindi/Marathi short version.
-- Screenshot placeholders added.
-- Frontend live preview deployed on Vercel.
 - Custom badges or GIF recording.
 
 I'll tailor the README further based on your preferences or interviewer expectations.
